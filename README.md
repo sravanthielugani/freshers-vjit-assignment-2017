@@ -90,3 +90,31 @@ Given below are links to some reference material which you may find useful while
  - http://www.mkyong.com/maven/how-to-create-a-java-project-with-maven/
 
 ## All the best and happy coding :-)
+
+
+# Solution :
+
+## Description
+The Java GUI Application which I have developed using JavaFX library of my knowledge would have the features like,
+ - DineIn
+ - Busboy
+ - Order Menu
+ - Chef
+ - Bill
+ - Home Delivery(:WorkIn Progress)
+ 
+ ## Technologies used
+ - Maven
+ - JavaFx library
+ - Java
+ 
+ ## Functional Description 
+ 
+ - The application starts from `RestaurantManagementSystemApp` class which extends `javafx.application.Application`. 
+ - Each screen in this GUI Apllication is represented as a `SCENE`.
+ - All the scenes used in this application implements `com.restaurant.management.system.scene.ViewScene` interface .
+ - The main class `RestaurantManagementSystemApp` by default loads `com.restaurant.management.system.scene.impl.HomeSceneImpl` Scene, from which the control will be passed to other Scenes(DineInSceneImpl,HomeDeliverySceneImpl, OrderFoodSceneImpl) with the help of MainController.
+ - MainController will manage to switch between multiple Scenes.
+ - Each class which represents a Scene does it's implementation by the help of the MainController delegating calls to the other scenes.
+ + 
+ +Thank you!
